@@ -22,14 +22,9 @@ function App() {
             <Route
               path="/"
               element={
-                loggedIn ? (
-                  <Navigate to="/home" />
-                ) : (
-                  
-                  <div className={styles.container}>
+              <div className={styles.container}>
                     <LoginForm setLoggedIn={setLoggedIn} />
-                  </div>
-                )
+              </div>
               }
             />
             <Route path="/home" element={<Home />} />
