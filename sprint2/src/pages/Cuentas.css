@@ -1,4 +1,13 @@
-.operaciones {
-    width: 100%;
-    border-collapse: collapse;
-  }
+.cuentas-container {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}

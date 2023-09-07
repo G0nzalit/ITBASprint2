@@ -1,4 +1,3 @@
-// App.js (Componente principal con enrutamiento)
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -7,6 +6,8 @@ import Cuentas from './pages/Cuentas';
 import Transferencias from './pages/Transferencias';
 import Operaciones from './pages/Operaciones';
 import Header from './Header';
+import styles from './LoginForm.module.css'; 
+import './Responsive.css';
 import LoginForm from './LoginForm';
 
 function App() {
@@ -18,7 +19,19 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={loggedIn ? <Navigate to="/home" /> : <LoginForm setLoggedIn={setLoggedIn} />} />
+            <Route
+              path="/"
+              element={
+                loggedIn ? (
+                  <Navigate to="/home" />
+                ) : (
+                  
+                  <div className={styles.container}>
+                    <LoginForm setLoggedIn={setLoggedIn} />
+                  </div>
+                )
+              }
+            />
             <Route path="/home" element={<Home />} />
             <Route path="/cuentas" element={<Cuentas />} />
             <Route path="/transferencias" element={<Transferencias />} />

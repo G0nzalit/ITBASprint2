@@ -10,8 +10,12 @@ function Cuentas() {
       <Sidebar />
       <div className="content">
         <h1>Mis Cuentas</h1>
-        <ResumenCuentas />
-        <Movimientos />
+        <div className="ResumenCuentas">
+          <ResumenCuentas />
+        </div>
+        <div className="Movimientos">
+          <Movimientos />
+        </div>
       </div>
     </div>
   );

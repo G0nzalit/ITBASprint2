@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar';
-import Promocion from '../pages/comp/Promocion';
-import Novedades from '../pages/comp/Novedades';
+import Promocion from '../pages/home/Promocion';
+import Novedades from '../pages/home/Novedades';
 import './Home.css';
 
 function Home() {
@@ -17,12 +17,20 @@ function Home() {
   
           <section id="promociones">
             <h2>Promociones para ti</h2>
-            <Promocion titulo="Depósito a plazo fijo" descripcion="Tasa preferencial 4% por 3 meses." />
-            <Promocion titulo="Seguro para tu auto" descripcion="20% de descuento en tu seguro anual." />
-            <Promocion titulo="Préstamos personales" descripcion="Sin interés por 3 meses." />
+            <div className="Promocion">
+              <Promocion titulo="Depósito a plazo fijo" descripcion="Tasa preferencial 4% por 3 meses." />
+            </div>
+            <div className="Promocion">
+              <Promocion titulo="Seguro para tu auto" descripcion="20% de descuento en tu seguro anual." />
+            </div>
+            <div className="Promocion">
+              <Promocion titulo="Préstamos personales" descripcion="Sin interés por 3 meses." />
+            </div>
           </section>
   
-          <Novedades />
+          <div className="Novedades">
+            <Novedades />
+          </div>
         </main>
   
         <footer>

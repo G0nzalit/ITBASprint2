@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './Promocion.css';
 
 function Promocion({ titulo, descripcion }) {
   return (

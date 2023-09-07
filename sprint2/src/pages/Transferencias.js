@@ -52,7 +52,7 @@ function Transferencias() {
         </header>
 
         <main>
-          <section>
+          <section className='transf'>
             <h2>Realizar Transferencia</h2>
 
             <form onSubmit={handleSubmit}>

@@ -1,0 +1,41 @@
+/* Responsive.css */
+
+/* Estilos generales para tamaños de pantalla más pequeños (móviles) */
+@media (max-width: 767px) {
+    /* Modifica el estilo del encabezado (header) para dispositivos móviles */
+    .headers {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .headers h1 {
+      font-size: 24px;
+    }
+  
+    /* Modifica el estilo del contenido principal (content) para dispositivos móviles */
+    .content {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    /* Modifica el estilo del pie de página (footer) para dispositivos móviles */
+    footer {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .pie ul {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .pie li {
+      list-style-type: none;
+      display: inline;
+      margin: 0 10px;
+    }
+  }
+  

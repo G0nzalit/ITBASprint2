@@ -1,8 +1,23 @@
-.headers   {
-display: inline-block;
-height: 10px;
-
-}
-.logoimage  {
-height: 10px;
-}
+.headers {
+    
+    display: flex;
+    align-items: center;
+    padding: 10px 260px;
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 0px;
+    z-index: 1;
+    }
+  
+  .headers img {
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 10%;
+  }
+  
+  .headers h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  
