@@ -4,7 +4,7 @@ import logoImage from './logotipo.png';
 
 function Header() {
   return (
-    <div className="header">
+    <div className="headers">
       <img src={logoImage} alt="Logo del Banco" />
       <h1>Banco Argentino Sin Inflación</h1>
     </div>
