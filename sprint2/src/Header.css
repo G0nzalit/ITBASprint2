@@ -1,0 +1,8 @@
+.header {
+ position: static;
+height: 100px;
+display: inline-block;
+}
+.logoimage  {
+width: 100px;
+}
